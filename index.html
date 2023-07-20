@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grounds & Co.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1211c2ba2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Yaldevi:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="nav-item">
+          <img src="/images/CoffeeLogo.png" alt="" />
+        </div>
+
+        <div class="nav-item">
+          <div class="add-to-cart">
+            <div class="cart-icon">
+              <i class="fa-solid fa-cart-shopping" id="open-cart"></i>
+            </div>
+            <div class="x-icon remove">
+              <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section" id="homepage">
+      <div class="hero-text">
+        <h1>Crafting Coffee Excellence, Just for You!</h1>
+        <p>
+          Discover a world of coffee excellence at Grounds & Co. From premium
+          beans to stylish mugs and cutting-edge makers, we have everything you
+          need for the perfect brew. Elevate your coffee experience with us
+          today.
+        </p>
+        <button><a href="#products-list">See Our Products</a></button>
+      </div>
+      <div class="hero-image">
+        <!-- <p class="hero-title">Grounds & Co.</p> -->
+        <img src="/images/HeroImage.png" />
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-one">
+        <div class="card-image">
+          <img src="/images/CoffeeBeans.png" />
+        </div>
+        <div>
+          <p>
+            Unleash extraordinary flavors with our carefully sourced and roasted
+            coffee beans.
+          </p>
+        </div>
+      </div>
+      <div class="card-two">
+        <div class="card-image">
+          <img src="/images/CoffeeMaker.png" />
+        </div>
+        <div>
+          <p>
+            Enhance your coffee experience with our top-notch coffee makers and
+            stylish mugs.
+          </p>
+        </div>
+      </div>
+      <div class="card-three">
+        <div class="card-image">
+          <img src="/images/DeliveryTruckNew.png" />
+        </div>
+        <div>
+          <p>
+            Unparalleled service, seamless delivery. Expect excellence from
+            start to finish. Guaranteed!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="product-title" id="products-list">All Products</div>
+    <div class="product-list"></div>
+    <div class="cart close">
+      <div class="cart-header">
+        <div class="column1">Item</div>
+        <div class="column2">Price</div>
+        <div class="column3">Qty</div>
+      </div>
+      <div class="cart-items">
+        <!-- render cart items here -->
+      </div>
+      <div class="cart-footer">
+        <div class="subtotal">Total (0 items): $0</div>
+        <button class="checkout">Proceed to checkout</button>
+      </div>
+    </div>
+    <div class="payment window">
+      <i class="fa-solid fa-xmark"></i>
+      <h1>Payment Information</h1>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        placeholder="John Doe"
+        class="payInput"
+        id="name"
+        required
+      />
+      <label for="card-number">Card Number:</label>
+      <input
+        type="text"
+        placeholder="0000 0000 0000 0000"
+        class="payInput"
+        id="card-number"
+        required
+      />
+      <div>
+        <div>
+          <label for="exp-date">Exp. Date:</label>
+          <input
+            type="text"
+            placeholder="00/00"
+            class="payInput"
+            id="exp-date"
+            required
+          />
+        </div>
+        <div>
+          <label for="cvv">CVV:</label>
+          <input
+            type="text"
+            placeholder="000"
+            class="payInput"
+            id="cvv"
+            required
+          />
+        </div>
+      </div>
+
+      <label for="address">Address</label>
+      <input
+        type="text"
+        placeholder="123 Main St."
+        class="payInput"
+        id="address"
+        required
+      />
+      <label for="city">City:</label>
+      <input
+        type="text"
+        placeholder="New York City"
+        class="payInput"
+        id="city"
+        required
+      />
+      <label for="state">State:</label>
+      <input
+        type="text"
+        placeholder="Texas"
+        id="state"
+        class="payInput"
+        required
+      />
+      <label for="zip">Zip Code:</label>
+      <input
+        type="text"
+        placeholder="12345"
+        class="payInput"
+        id="zip"
+        required
+      />
+      <button class="final-checkout" onclick="finalPayment()">Checkout</button>
+    </div>
+
+    <script src="/data.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
