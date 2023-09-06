@@ -13,7 +13,7 @@ JS-Ecommerce is a simple and lightweight e-commerce website built with HTML, CSS
 
 ## Demo
 
-You can see a live demo of the project [here]([https://your_demo_link_here.com](https://groundscoffee.online/)).
+You can see a live demo of the project [here](https://groundscoffee.online/).
 
 ## Features
 
